@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibhore Goswami | M.Tech at IISc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div style="text-align: center;">
+            <h1>Bibhore Goswami</h1>
+            <p>M.Tech Student, Department of Electronic Systems Engineering, IISc Bangalore</p>
+            </div>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px;">
+            <img src="Indian_Institute_of_Science_2019_logo.svg" alt="IISc Logo" style="height: 120px;">
+            <img src="ju.png" alt="JU Logo" style="height: 120px;">
+        </div>
+    </header>
+      
+
+    <!-- Navigation -->
+    <nav id="navButtons">
+        <button class="amarbutton" onclick="showSection('home')">Home</button>
+        <button class="amarbutton" onclick="showSection('academic')">Academic Projects</button>
+        <button class="amarbutton" onclick="showSection('cultural')">Cultural Involvements</button>
+        <button class="amarbutton" onclick="showSection('blog')">Blog</button>
+    </nav>
+
+    <!-- Main Sections -->
+    <main>
+        <section id="home">
+            <h2>About Me</h2>
+            <p>I am Bibhore Goswami (বিভোর গোস্বামী) from Tamluk, West Bengal. I did my schooling at Tamluk Hamilton
+                High School and B.E. in Electrical Engineering at Jadavpur University. Currently pursuing M.Tech in
+                Electronic Systems Engineering at IISc Bangalore.</p>
+            <img src="me.jpg" alt="Bibhore's Photo" class="profile-img">
+            <h2>Why a Website?</h2>
+            <p>From Tamluk to Kolkata to Bangalore — life has been a journey of growth. This space reflects my
+                experiences, learnings, and creative expressions. You're welcome to explore and connect!</p>
+        </section>
+
+        <section id="academic" style="display: none;">
+            <h2>Academic Projects</h2>
+            <p>Below are some of the key projects I’ve worked on during my B.E. and M.Tech:</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Implementation of Permutation Function of ASCON Cipher Using Verilog</h3>
+                    <p><strong>Description:</strong> Developed a Verilog-based hardware implementation of the ASCON
+                        cipher’s permutation
+                        function. Conducted detailed power and timing analysis, exploring trade-offs between parallelism
+                        and resource
+                        usage.</p>
+                    <p><strong>Simulation Software:</strong> Xilinx Vivado</p>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #0073e6;">📄 Read Project PDF
+                        </summary>
+                        <div style="width: 100%; overflow-x: auto;">
+                            <div style="transform: scale(1.25); transform-origin: top left; width: 80%;">
+                                <iframe src="ASCON_REPORT_BIBHORE_24448.pdf" width="100%" height="600px"
+                                    style="border: 1px solid #ccc;"></iframe>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>Implementation of a 16-bit Signed/Unsigned, Radix-4 Booth Multiplier with Sleep Mode</h3>
+                    <p><strong>Description:</strong> Designed a Booth-encoded, two-stage pipelined multiplier using
+                        Cadence Virtuoso.- Integrated sleep-mode features to
+                        reduce power consumption. Completed schematic and layout phases.</p>
+
+                    <p><strong>Simulation Software:</strong> Cadence virtuoso</p>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #0073e6;">📄 Read Project PDF
+                        </summary>
+                        <div style="width: 100%; overflow-x: auto;">
+                            <div style="transform: scale(1.25); transform-origin: top left; width: 80%;">
+                                <iframe src="Dvlsi report.pdf" width="100%" height="600px"
+                                    style="border: 1px solid #ccc;"></iframe>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>Image Processing on BASYS3 FPGA Using Verilog</h3>
+                    <p><strong>Description:</strong> Implemented image processing operations (inversion, sharpening,
+                        blurring, edge detection) on FPGA.- Displayed processed
+                        output via VGA port.</p>
+                    <p><strong>Technologies:</strong> Xilinx Vivado </p>
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #0073e6;">📄 Read Project PDF
+                        </summary>
+                        <div style="width: 100%; overflow-x: auto;">
+                            <div style="transform: scale(1.25); transform-origin: top left; width: 80%;">
+                                <iframe src="Dvlsi report.pdf" width="100%" height="600px"
+                                    style="border: 1px solid #ccc;"></iframe>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="project-card">
+                    <h3>TEMP-Based Spiking Neural Network Design</h3>
+                    <p><strong>Description:</strong> Simulated a biologically inspired spiking neural network architecture.- Designed various neuron types and modeled
+                    temporal patterns for practical neural behavior</p>
+                    <p><strong>Technologies:</strong> Xilinx Vivado </p>
+                </div>
+
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+
+        <section id="cultural" style="display: none;">
+            <h2>Cultural Involvements</h2>
+            <p>I’m a learner of Indian Hindustani classical music and an avid lover of Bengali songs like Rabindra
+                Sangeet, devotional music, and retro hits. From school to university, I’ve enjoyed performing at
+                cultural events.</p>
+
+            <p>Recently, I joined the drama group “Rangan” (রঙ্গন) from Tamluk and participated in plays like “দেবতার
+                জন্ম”, “হাওড়া ব্রীজের মাথায় মানুষ”, and “পুনর্জন্ম”. Although I'm away, I stay connected with them
+                remotely.</p>
+
+            <div class="centered">
+                <button id="cultural_button" onclick="toggleGallery()">🎭 Show/Hide Gallery</button>
+            </div>
+
+            <div id="gallery" style="display: none;" class="gallery">
+                <figure>
+                    <img src="song1.jpg" alt="Cultural Performance">
+                    <figcaption>IISc Cultural Performance</figcaption>
+                </figure>
+                <figure>
+                    <img src="howrah bridge.jpg" alt="Drama Performance">
+                    <figcaption>হাওড়া ব্রীজের মাথায় মানুষ</figcaption>
+                </figure>
+                <figure>
+                    <img src="punorjonmo.jpg" alt="Drama Performance">
+                    <figcaption>পুনর্জন্ম</figcaption>
+                </figure>
+                <figure>
+                    <img src="jusong.jpg" alt="JU Event">
+                    <figcaption>JU Alumni Program</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="blog" style="display: none;">
+            <h2>Blog</h2>
+            <p>Coming soon! Stay tuned for my thoughts on tech, creativity, and spirituality.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>📧 Personal: bibhoreofficial1@gmail.com | Academic: bibhoreg@iisc.ac.in</p>
+        <p>&copy; 2025 Bibhore Goswami</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
